@@ -1,0 +1,30 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+1. show_intro():
+This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+2. clean_emails():
+   - The map function is used to apply a cleaning operation to each email in the list.
+   - A lambda function (lambda e: e.strip().lower()) removes any leading/trailing spaces (strip()) and converts the email to lowercase (lower()).
+   - The filter function is used to filter all emails from list based on weather emails consists of @ and . .
+   - A lambda function (lambda e: "@" in e and "." in e, cleaned) filters email by checking @ and . 
+   - And then displays all cleaned and filtered emails.
+
+3. calculate_total():
+   - Takes a list of prices as an arg and then reduces the list of prices into a single value
+   - The lambda function (lambda x, y: x + y, prices) used to reduce the prices.
+
+4. main():
+   - This where the program execution starts from.
+   - It calls show_intro() to display introduction.
+   - creates a list of emails and passes them into clean_emails() to get cleaned and filtered emails.
+   - creates a list of prices and passes them into calculate_total() to get reduced price.
+
+Starting Point:
+  - The code includes an entry point check (if __name__ == "__main__":) to ensure that main() is called only when the script is executed directly, not when imported as a module.
+
+Key Concepts Used and what I've learnt:
+1. map(): Applies a function to each item in an iterable.
+2. filter(): Filters items in an iterable based on a condition.
+3. reduce(): Reduces an iterable to a single value by applying a function continously.
+4. Lambda Functions: Anonymous functions used for concise operations in map, filter, and reduce.
